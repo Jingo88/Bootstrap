@@ -2,6 +2,10 @@
 
 The row beneath that will have a description of the movie on the left half of the screen, and an unordered list of actors on the right half of the screen (on desktop). -->
 
+<!-- Add a button that triggers a modal to your movie page from the last exercise. The contents of the modal will be a quote from the movie.
+
+Bonus: Try to use different button classes (see here for reference: http://getbootstrap.com/css/?#buttons)
+ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +26,28 @@ The row beneath that will have a description of the movie on the left half of th
       <div class = 'col-md-6'>
         <h1>Movie Description</h1>
         <p>A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which begin when five criminals meet at a seemingly random police lineup.</p>
+        
+        <ul>
+          <li>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#theDevil">
+              Quote 1
+            </button>
+          </li>
+
+          <li>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#smarts">
+              Quote 2
+            </button>
+          </li>
+          
+          <li>
+            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Kobayashi">
+              Quote 3
+            </button>
+          </li>
+
+        </ul>
+
       </div>
       <div class = 'col-md-4 col-md-offset-2'>
         <h1>Movie Cast</h1>
@@ -36,7 +62,66 @@ The row beneath that will have a description of the movie on the left half of th
       </div>
     </div>
 
+<div class="modal fade" id="theDevil">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="myModalLabel">Roger "Verbal" Kint:</h4>
+    </div>
+    <div class="modal-body">
+      The greatest trick the devil ever pulled, was convincing the world he didn't exist.
+    </div>
+  </div>
+</div>
+</div>
 
+<div class="modal fade" id="smarts">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="myModalLabel">Dave Kujan:</h4>
+    </div>
+    <div class="modal-body">
+      I'm smarter than you, and I'm going to find out what I want to know whether you like it or not.
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="Kobayashi">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="myModalLabel">Kobayashi</h4>
+    </div>
+    <div class="modal-body">
+      One cannot be betrayed if one has no people.
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#biggerBoat">
+Click Me!
+</button>
+
+<div class="modal fade" id="biggerBoat">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="myModalLabel">Chief Brody</h4>
+    </div>
+    <div class="modal-body">
+      We're going to need a bigger boat.
+    </div>
+  </div>
+</div>
+</div> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

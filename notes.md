@@ -22,3 +22,33 @@ How do you overrite Bootstraps responsiveness? You can make another class
 	  	</div>
 	  	</div>'''
 In this example it is saying, if the screen is smaller the columns containing "PRINCESS" will take up six columns instead of four
+
+
+Now we have a button!
+
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#biggerBoat">
+Click Me!
+</button>
+
+To use this we will need a Modal code
+
+<!-- Modal -->
+<div class="modal fade" id="biggerBoat">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="myModalLabel">Chief Brody</h4>
+    </div>
+    <div class="modal-body">
+      We're going to need a bigger boat.
+    </div>
+  </div>
+</div>
+</div>
+
+* fade means it fades in and out
+* modal dialog and content is what brings modal in
+* the button with type of button and class of close will bring in the x 
+* 
+
